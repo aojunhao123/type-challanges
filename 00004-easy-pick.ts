@@ -24,6 +24,8 @@ interface Expected2 {
 }
 
 // ============= Your Code Here =============
+
+// Pick功能：提取对象中指定的属性
 type MyPick<T, K extends keyof T> = {
-  [Key in K]: T[Key];
+  [P in K]: T[P];
 };
